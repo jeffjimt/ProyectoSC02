@@ -56,4 +56,18 @@ public class Reservacion {
     public void setFechaSalida(String fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
+    
+   // Método para mostrar información de la reservación
+    public String mostrarInformacion() {
+        return "Cédula cliente: " + clienteCedula +
+               "\nHabitación: " + numeroHabitacion +
+               "\nFecha entrada: " + fechaEntrada +
+               "\nFecha salida: " + fechaSalida;
+    }
+
+    // Método para cambiar fechas
+    public void cambiarFechas(String nuevaEntrada, String nuevaSalida) {
+        fechaEntrada = nuevaEntrada;
+        fechaSalida = nuevaSalida;
+    }
 }
