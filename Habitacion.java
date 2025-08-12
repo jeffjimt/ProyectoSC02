@@ -46,4 +46,15 @@ public class Habitacion {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
+
+   // Método para mostrar información de la habitación
+    public String mostrarInformacion() {
+        String estado = disponible ? "Disponible" : "Ocupada";
+        return "Número: \n" + numero + "\nTipo: " + tipo + "\nEstado: " + estado;
+    }
+
+    // Método para cambiar disponibilidad
+    public void cambiarDisponibilidad(boolean estado) {
+        disponible = estado;
+    }
 }
