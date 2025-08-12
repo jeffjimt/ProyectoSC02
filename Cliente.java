@@ -13,6 +13,7 @@ public class Cliente {
     private String nombre;
     private String correo;
 
+
     // Constructor vacío (por si se quiere crear sin datos al inicio)
     public Cliente() {
     }
@@ -47,5 +48,15 @@ public class Cliente {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    // Método para mostrar información del cliente
+    public String mostrarInformacion() {
+        return "Cédula: " + cedula + "\nNombre: " + nombre + "\nCorreo: " + correo;
+    }
+
+    // Método simulado para historial
+    public String mostrarHistorial() {
+        return "Historial del cliente " + nombre;
     }
 }
