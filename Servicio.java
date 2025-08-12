@@ -38,4 +38,10 @@ public class Servicio {
         this.precio = precio;
     }
 
+   // Método para mostrar información del servicio
+    
+    public String mostrarInformacion() {
+        return "Servicio: " + nombre + " - Precio: ₡" + precio;
+        
+    }
 }
